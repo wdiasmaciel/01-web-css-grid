@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        * {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            /*Cria 3 linhas de tamanho igual.*/
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            /*Espaçamento entre os elementos.*/
+            gap: 10px;
+            border: 1px solid green;
+        }
+
+        .item {
+            /*width: 3rem;*/
+            height: 3rem;
+            border: 1px solid red;
+            border-radius: .5rem;
+            padding: .5rem;
+            margin: .5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+        <div class="item">Item 07</div>
+    </div>
+
+</body>
+
+</html>

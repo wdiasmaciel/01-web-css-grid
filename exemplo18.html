@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout com CSS Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "sidebar main main"
+                "footer footer footer";
+            grid-template-columns: 200px 1fr 1fr;
+            /* Define a largura das colunas */
+            grid-template-rows: 60px auto 40px;
+            /* Define a altura das linhas */
+            height: 100vh;
+        }
+
+        .header {
+            grid-area: header;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background: #555;
+            color: white;
+            padding: 10px;
+        }
+
+        .main {
+            grid-area: main;
+            background: #ddd;
+            padding: 10px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Logo | Título | Menu</div>
+        <div class="sidebar">Menu Lateral</div>
+        <div class="main">Área Principal</div>
+        <div class="footer">Rodapé</div>
+    </div>
+</body>
+
+</html>
