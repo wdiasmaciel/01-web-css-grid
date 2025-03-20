@@ -11,21 +11,19 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        .container {
-            /*Define este elemento como um container de grid.*/
+        .block-grid {
             display: grid;
-            border: 1px solid green;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            background: lightblue;
         }
 
-        .item {
-            /*width: 3rem;*/
-            height: 3rem;
-            border: 1px solid red;
-            border-radius: .5rem;
-            padding: .5rem;
-            margin: .5rem;
+        .inline-grid {
+            display: inline-grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            background: lightcoral;
         }
-
     </style>
 </head>
 
@@ -39,6 +37,18 @@
         <div class="item">Item 06</div>
         <div class="item">Item 07</div>
     </div>
+
+    <div class="block-grid">
+        <div>Item 1 block-grid</div>
+        <div>Item 2 block-grid</div>
+    </div>
+
+    <p>Texto normal
+      <div class="inline-grid">
+          <div>Item A</div>
+          <div>Item B</div>
+      </div> dentro do parágrafo.
+    </p>
 </body>
 
 </html>

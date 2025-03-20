@@ -12,8 +12,9 @@
         }
 
         .container {
-            /*Define este elemento como um container de grid.*/
             display: grid;
+            /* Cria duas colunas, a segunda sendo o quádruplo da primeira */
+            grid-template-columns: 1fr 4fr;
             border: 1px solid green;
         }
 
@@ -25,7 +26,6 @@
             padding: .5rem;
             margin: .5rem;
         }
-
     </style>
 </head>
 
@@ -39,6 +39,7 @@
         <div class="item">Item 06</div>
         <div class="item">Item 07</div>
     </div>
+
 </body>
 
 </html>
