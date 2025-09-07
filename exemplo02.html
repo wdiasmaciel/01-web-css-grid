@@ -11,37 +11,34 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        .container {
-            /*Define este elemento como um container de grid.*/
-            display: inline-grid;
-            border: 1px solid green;
-        }
-
-        .item {
-            /*width: 3rem;*/
-            height: 3rem;
-            border: 1px solid red;
-            border-radius: .5rem;
-            padding: .5rem;
-            margin: .5rem;
-
-        }
-
         .inline-grid {
             display: inline-grid;
             grid-template-columns: 1fr 1fr;
             gap: 10px;
             background: lightcoral;
         }
+
+        .item {
+            width: 3rem;
+            height: 3rem;
+            border: .1rem solid #801212;
+            border-radius: .5rem;
+            padding: .5rem;
+            margin: .5rem;
+
+        }
     </style>
 </head>
 
 <body>
-    <p>Texto normal
-    <div class="inline-grid">
-        <div>Item A</div>
-        <div>Item B</div>
-    </div> dentro do parágrafo.</p>
+    <div>
+        Texto normal
+        <div class="inline-grid">
+            <div class="item">Item A</div>
+            <div class="item">Item B</div>
+        </div>
+        dentro da DIV.
+    </div>
 </body>
 
 </html>
