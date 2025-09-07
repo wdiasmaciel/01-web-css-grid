@@ -16,6 +16,7 @@
             grid-template-columns: 1fr 1fr;
             gap: 10px;
             background: lightblue;
+            margin: .5rem;
         }
 
         .inline-grid {
@@ -23,32 +24,47 @@
             grid-template-columns: 1fr 1fr;
             gap: 10px;
             background: lightcoral;
+            margin: .5rem;
+        }
+
+        .container {
+            background-color: #cca2f4;
+            padding: .5rem;
+            margin: .5rem;
+        }
+
+        .item {
+            /* width: 3rem; */
+            height: 3rem;
+            border: .1rem solid #801212;
+            border-radius: .5rem;
+            padding: .5rem;
+            margin: .5rem;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
+    <div>
         <div class="item">Item 01</div>
         <div class="item">Item 02</div>
         <div class="item">Item 03</div>
         <div class="item">Item 04</div>
-        <div class="item">Item 05</div>
-        <div class="item">Item 06</div>
-        <div class="item">Item 07</div>
     </div>
 
     <div class="block-grid">
-        <div>Item 1 block-grid</div>
-        <div>Item 2 block-grid</div>
+        <div class="item">Item 1 block-grid</div>
+        <div class="item">Item 2 block-grid</div>
     </div>
 
-    <p>Texto normal
-      <div class="inline-grid">
-          <div>Item A</div>
-          <div>Item B</div>
-      </div> dentro do parágrafo.
-    </p>
+    <div class="container">
+        Texto normal
+        <div class="inline-grid">
+            <div class="item">Item A</div>
+            <div class="item">Item B</div>
+        </div>
+        dentro da DIV.
+    </div>
 </body>
 
 </html>
